@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { getMovies } from '../API';
+import { getMovies } from '../utils/API';
 import '../styles/Row.css'
 
 // https://developers.themoviedb.org/3/getting-started/images

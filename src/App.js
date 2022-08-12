@@ -1,11 +1,13 @@
-import './App.css';
+import './styles/App.css';
 import Row from './components/Row';
-import categories from './API';
+import categories from './utils/API'
 import Banner from './components/Banner';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Banner />
       {categories.map((category) => {
       return <Row key={category.name} title={category.title} path={category.path} isLarge={category.isLarge}/>

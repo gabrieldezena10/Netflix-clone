@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import categories, { getMovies } from '../API'
+import categories, { getMovies } from '../utils/API'
 import '../styles/Banner.css'
 
 function Banner() {
