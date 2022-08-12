@@ -4,7 +4,6 @@ import categories, { getMovies } from '../API'
 import '../styles/Banner.css'
 
 function Banner() {
-
 const [movie, setMovie] = useState([])
 
 const fetchRandomMovie = async() => {
@@ -20,9 +19,12 @@ const fetchRandomMovie = async() => {
 
 useEffect(() => {
   fetchRandomMovie();
-}, [])
+}, []);
 
 
+function truncate(str, n) {
+  return str?.length > n ? str.substr(0, n - 1) + '...' : str;
+}
 
   return (
     <header className='banner-container' style={{
@@ -31,10 +33,15 @@ useEffect(() => {
       roundPosition: 'center-center'
     }}>
       <div className='banner-content'>
-      <h1 className='banner-title'>{movie?.title || movie?.name || movie?.original_name}</h1>
-      <div className='banner-button'>Assistir</div>
-      <div className='banner-button'>Minha Lista</div>
-      <div className='banner-description'></div>
+        <h1 className='banner-title'>{movie?.title || movie?.name || movie?.original_name}</h1>
+        <div className='banner-button-container'>
+          <button className='banner-button'>Assistir</button>
+          <button className='banner-button'>Minha Lista</button>
+        </div>
+
+        <div className='banner-description'>
+          <h3>{truncate(movie?.overview, 150)}</h3>
+        </div>
       </div>
     </header>
   )
