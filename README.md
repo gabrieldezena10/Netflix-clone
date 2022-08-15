@@ -1,3 +1,14 @@
+# Netflix-Clone
+
+## Esse projeto reproduz o layout da plataforma de streaming 'Netflix'.
+
+#Tecnologias utilizadas
+
+-- HTML, CSS, JavaScript-ReactJS
+
+![image](https://user-images.githubusercontent.com/86879421/184730247-0dcaa1af-6956-4fcc-b5cb-c99909621386.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
