@@ -5,19 +5,23 @@
 
 .row-cards {
   display: flex;
-  overflow-y: hidden;
+  overflow-y: none;
   overflow-x: scroll;
-  padding: 20px;
+  padding: 5px;
 }
 
 .row-cards::-webkit-scrollbar {
   display: none;
 }
 
+.row-header {
+  padding: 0 0 10px;
+}
+
 .movie-card{
   object-fit: contain;
   width: 100%;
-  max-height:100px;
+  max-height:120px;
   margin-bottom: 10px;
   transition: transform 450ms;
 }
